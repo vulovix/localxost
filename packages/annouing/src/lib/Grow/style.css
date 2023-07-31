@@ -1,0 +1,19 @@
+.annouing.grow-container{
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.annouing.grow{
+    display: inline-block;
+    transform: scale(1);
+    transition: 1s linear;
+}
+.annouing.grow.growing{
+    position: relative;
+    transform: scale(10);
+    transition: 180s linear;
+    position: fixed;
+}

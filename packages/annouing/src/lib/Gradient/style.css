@@ -1,0 +1,48 @@
+.annouing.gradient {
+    transition: all 1s ease;
+    color: #FF1361;
+    background-color: #FF1361;
+    background: -o-linear-gradient(left, #FFF800 10%, #FF1361, #44107A, #7794ff);
+    background: -webkit-linear-gradient(left, #FFF800 10%, #FF1361, #44107A, #7794ff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.annouing.gradient {
+    -webkit-animation: annouingDance 2s infinite forwards ease-in-out;
+    animation: annouingDance 2s infinite forwards ease-in-out;
+}
+
+@media screen and (min-width:0\0) {
+    /* IE9 and IE10 hack */
+    .gradient {
+        background: transparent;
+    }
+}
+
+@-moz-document url-prefix() {
+    /* Firefox hack */
+    .gradient {
+        background-color: transparent;
+    }
+}
+
+@-webkit-keyframes annouingDance {
+    50% {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-position: -860px;
+    }
+}
+
+@keyframes annouingDance {
+    50% {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-position: -860px;
+    }
+}

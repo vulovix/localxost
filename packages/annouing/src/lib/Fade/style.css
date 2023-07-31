@@ -1,0 +1,7 @@
+.annouing.fade{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.annouing.fade:hover{
+    opacity: 0.1;
+}

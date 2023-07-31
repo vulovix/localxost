@@ -1,0 +1,9 @@
+.annouing.bouncer{
+    position: relative;
+    display: inline-block;
+}
+.annouing.object{
+    position: absolute;
+}
+.annouing.bouncer:hover{
+}

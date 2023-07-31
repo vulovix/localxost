@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS';
+}
+body{
+  /* height: 200vh; */
+}
+.text-center{
+  text-align: center;
+}
+.big-text{
+
+  font-size: 4rem;
+}
+.grid-bouncer{
+  display: grid;
+  gap: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  grid-template-columns: 3fr 1fr;
+  border: 1px solid white;
+}
+.my-bouncer{
+  padding: 2rem;
+  width: 100%;
+  border: 1px solid white;
+}
+.gradient-text{
+  font-size: 40px;
+  font-size: calc(20px + (40 - 20) * (100vw - 400px) / (1000 - 400));
+}

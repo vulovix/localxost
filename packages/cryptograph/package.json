@@ -1,0 +1,22 @@
+{
+  "name": "@localxost/cryptograph",
+  "version": "0.0.3",
+  "main": "./src/index.ts",
+  "type": "module",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node ./test.js",
+    "build": "tsc && vite build",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  }
+}
