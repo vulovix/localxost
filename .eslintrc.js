@@ -69,9 +69,7 @@ module.exports = {
         "import/resolver": {
           typescript: {},
           alias: {
-            map: [
-              ["@my-site", "./sites/my-site/src"]
-            ],
+            map: [],
             extensions: [
               ".ts",
               ".tsx",
