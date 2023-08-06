@@ -4,11 +4,11 @@
 
 Text decryption effect.
 
-[Github Repository](https://github.com/vulovix/localxost/packages/cryptograph)
+[Github Repository](https://github.com/vulovix/localxost/tree/master/packages/cryptograph)
 
 ## Demo Example
 
-[Demo Example](https://vulovix.com/craft/kriptograf)
+[Demo Example](https://vulovix.com/craft/cryptograph)
 
 ## Install
 
@@ -31,6 +31,7 @@ b.setSubset("sr-Cyrl");
 b.run(sentenceTwo, 10, console.log);
 
 ```
+
 ## Test
 
 ```
