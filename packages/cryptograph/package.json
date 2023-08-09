@@ -1,18 +1,27 @@
 {
   "name": "@localxost/cryptograph",
-  "version": "0.0.4",
-  "main": "./src/index.ts",
+  "version": "0.0.5",
   "type": "module",
-  "types": "index.d.ts",
   "scripts": {
     "test": "node ./test.js",
-    "build": "tsc && vite build",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.8",
+    "@types/node": "17.0.23",
+    "babel-loader": "8.2.4",
+    "json": "11.0.0",
+    "typescript": "4.6.3",
+    "vite": "2.8.6",
+    "vite-plugin-dts": "1.0.3"
   },
   "license": "MIT",
   "files": [
     "dist"
   ],
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
